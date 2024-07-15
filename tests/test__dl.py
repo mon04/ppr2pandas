@@ -1,6 +1,4 @@
 import unittest
-import logging
-import io
 from ppr2pandas._dl import download_ppr_all_csv, download_ppr_specific_csv
 
 
