@@ -65,7 +65,6 @@ def download_ppr_specific_csv(county: str, year: int, month: int) -> str:
             'month': f"{month:02d}", 
             'county': county
         })
-    print("Downloading", url)
     response = requests.get(url, verify=False)
     if response.status_code == 200:
         return response.content.decode(_PPR_ENCODING)
